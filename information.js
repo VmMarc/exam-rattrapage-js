@@ -1,7 +1,9 @@
 const information = (prenom, nom, age, sexe) => {
+
 console.log(`prenom: ${prenom}`)
 console.log(`nom: ${nom}`)
 console.log(`age: ${age}`)
+
   if (age >= 18 && sexe === '?') {
     console.log(`Vous êtes majeur depuis ${age - 18} ans.`)
   } else if (age < 18 && sexe === '?'){
@@ -20,4 +22,5 @@ console.log(`age: ${age}`)
     console.log(`Madame, vous serez majeur dans ${18 - age} ans.`)
   }
 }
+
 information('Sofiane', 'Akermoun', 17, 'M')
